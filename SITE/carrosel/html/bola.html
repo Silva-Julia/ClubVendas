@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja Online</title>
+    <link rel="stylesheet" href="css/out.css">
+</head>
+<body>
+
+    <!-- Cabeçalho com Barra de Pesquisa e Abas de Navegação -->
+    <header>
+        <img src="img/logo.jpg" alt="logo" src="imagem.jpg" width="70" height="70">
+        <nav id="navAbas">
+            <a href="index.html">Home</a>
+            <a href="#">Categorias</a>
+            <a href="#">Carrinho</a>
+            <a href="#">Perfil</a>
+        </nav>
+        <input type="text" placeholder="Buscar produtos..." id="barraPesquisa">
+        <button onclick="buscarProduto()">Buscar</button>
+    </header>
+
+    <!-- Menu de Categorias -->
+    <nav id="categorias">
+        <a href="#">Eletrônicos</a>
+        <a href="#">Escola</a>
+        <a href="#">Casa e Jardim</a>
+        <a href="#">Esportes</a>
+        <a href="#">Ferramentas</a>
+        <a href="#">Brinquedo</a>
+
+    </nav>
+
+    <!-- Lista de Produtos -->
+            <main>
+                <section id="detalhesProduto">
+                    <div class="produto">
+                        <img src="img/boladefutebol.png" alt="Bola de Futebol" width="400" height="400">
+                        <h2>Bola de Futebol de Campo Corinthians Black</h2>
+                        <p><strong>Preço: R$ R$ 70,00</strong></p>
+                        <p>Descrição: A Bola de Futebol de Campo Corinthians Black é perfeita para torcedores e jogadores que desejam um toque de sofisticação no campo.
+                            Com um visual elegante em preto e detalhes que celebram o Timão, esta bola oferece resistência e controle excepcionais, ideal para partidas intensas e treinos.
+                            Sua construção de alta qualidade assegura durabilidade e performance superior. 
+                            Adquira a sua e jogue com a classe do Corinthians!</p>
+                        <h2> Descrição Detalhada: </h2> 
+                        <ul> 
+                            <li><strong>Circunferência (cm)</strong> 69,00</li>
+                            <li><strong>Pressão (Lbs)</strong> 7 - 9 0.6 - 0.8 bar</li>	
+                            <li><strong>Escudo</strong>Clube Corinthians</li>
+                            <li><strong>Garantia do Fornecedor</strong>Contra Defeito de Fabricação</li> 
+                            <li><strong>Conteúdo da Embalagem</strong> 1 Bola</li>
+                            <li><strong>Composição</strong>PVC macio.</li>
+                            <li><strong>Tamanho:</strong>Médio</li>
+                            <li><strong>Cor:</strong>Preto</li>
+                        </ul>
+                        
+                        <button onclick="adicionarAoCarrinho('Bola', 150)">Adicionar ao Carrinho</button>
+                    </div>
+                </section>
+              <!-- Produtos Similares -->
+        <section id="produtosSimilares">
+            <h2>Produtos Similares</h2>
+            <div class="produtos-similares">
+                <!-- Produto Similar 1 -->
+                <div class="produto-similar">
+                    <a href="detalhes-produto2.html">
+                        <img src="img/Bola Brasil.png" alt="Bola de Futebol Brasil" width="200" height="200">
+                        <p><strong>Bola de Futebol Brasil</strong></p>
+                        <p><strong>Preço: R$ 60,00</strong></p>
+                    </a>
+                </div>
+                <!-- Produto Similar 2 -->
+                <div class="produto-similar">
+                    <a href="detalhes-produto3.html">
+                        <img src="img/bolaAdidas.png" alt="Bola de Futebol Adidas" width="200" height="200">
+                        <p><strong>Bola de Futebol Adidas</strong></p>
+                        <p><strong>Preço: R$ 80,00</strong></p>
+                    </a>
+                </div>
+                <!-- Produto Similar 3 -->
+                <div class="produto-similar">
+                    <a href="detalhes-produto4.html">
+                        <img src="img/Bola Nike.png" alt="Bola de Futebol Nike" width="200" height="200">
+                        <p><strong>Bola de Futebol Nike</strong></p>
+                        <p><strong>Preço: R$ 75,00</strong></p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Minha Loja Online</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+

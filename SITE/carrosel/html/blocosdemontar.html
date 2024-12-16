@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja Online</title>
+    <link rel="stylesheet" href="css/out.css">
+</head>
+<body>
+
+    <!-- Cabeçalho com Barra de Pesquisa e Abas de Navegação -->
+    <header>
+        <img src="img/logo.jpg" alt="logo" src="imagem.jpg" width="70" height="70">
+        <nav id="navAbas">
+            <a href="index.html">Home</a>
+            <a href="#">Categorias</a>
+            <a href="#">Carrinho</a>
+            <a href="#">Perfil</a>
+        </nav>
+        <input type="text" placeholder="Buscar produtos..." id="barraPesquisa">
+        <button onclick="buscarProduto()">Buscar</button>
+    </header>
+
+    <!-- Menu de Categorias -->
+    <nav id="categorias">
+        <a href="#">Eletrônicos</a>
+        <a href="#">Escola</a>
+        <a href="#">Casa e Jardim</a>
+        <a href="#">Esportes</a>
+        <a href="#">Ferramentas</a>
+        <a href="#">Brinquedo</a>
+
+    </nav>
+
+    <!-- Lista de Produtos -->
+            <main>
+                <section id="detalhesProduto">
+                    <div class="produto">
+                        <img src="img/blocosdemontar.png" alt="Bloco de Montar" width="400" height="400">
+                        <h2>Blocos de Montar</h2>
+                        <p><strong>Preço: R$ R$ 150,00</strong></p>
+                        <p>Descrição: Blocos de montar com 112 peças, um brinquedo que estimula a criatividade, coordenação motora, além da percepção de espaço e tamanho.
+                            O kit acompanha 112 peças de diversos tamanhos.
+                            O ótimo acabamento das peças permite um ótimo encaixe e uma montagem sem dificuldades para as crianças.
+                            As bordas superiores dos blocos são totalmente arredondadas e muito bem acabadas, o material é colorido, atoxico e com alto brilho. </p>
+                        <h2> Descrição Detalhada: </h2> 
+                        <ul> 
+                            <li><strong>Circunferência (cm)</strong>- Peças sortidas entre tamanhos de 3cm a 6cm. </li>
+                            <li><strong> Validade:</strong>Indeterminada</li>	
+                            <li><strong>Indicação:</strong>+3</li>
+                            <li><strong>Cor</strong>Solidas</li> 
+                            <li><strong>Composição</strong>Plástico Atóxico</li>
+                            <li><strong>Composição</strong>PVC macio.</li>
+                        </ul>
+                        
+                        <button onclick="adicionarAoCarrinho('Bola', 150)">Adicionar ao Carrinho</button>
+                    </div>
+                </section>
+              <!-- Produtos Similares -->
+        <section id="produtosSimilares">
+            <h2>Produtos Similares</h2>
+            <div class="produtos-similares">
+                <!-- Produto Similar 1 -->
+                <div class="produto-similar">
+                    <a href="detalhes-produto2.html">
+                        <img src="img/legohomemaranha.png" alt="Lego - Homem Aranha width="200" height="200">
+                        <p><strong> LEGO BrickHeadz Homem-Aranha de Ferro</strong></p>
+                        <p><strong>Preço: R$ 84,99</strong></p>
+                    </a>
+                </div>
+                <!-- Produto Similar 2 -->
+                <div class="produto-similar">
+                    <a href="detalhes-produto3.html">
+                        <img src="img/legoinfantil.png" alt="Casa de Bonecas Gabby" width="200" height="200">
+                        <p><strong>Casa de Bonecas Gabby - Lego</strong></p>
+                        <p><strong>Preço: R$ 590,00</strong></p>
+                    </a>
+                </div>
+                <!-- Produto Similar 3 -->
+                <div class="produto-similar">
+                    <a href="detalhes-produto4.html">
+                        <img src="img/palaciodegelo.png" alt="Lego Palácio de Gelo" width="200" height="200">
+                        <p><strong>Lego Disney Palácio de Gelo da Elsa</strong></p>
+                        <p><strong>Preço: R$ 799,00</strong></p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Minha Loja Online</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+

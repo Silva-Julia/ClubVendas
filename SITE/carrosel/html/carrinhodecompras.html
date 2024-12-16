@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="css/carrinho.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Carrinho de Compras</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html">Produtos</a>
+            <a href="login.html">Perfil</a>
+        </nav>
+    </header>
+
+    <!-- Carrinho de Compras -->
+    <main>
+        <section id="carrinho">
+            <table id="tabelaCarrinho">
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th>Preço</th>
+                        <th>Total</th>
+                        <th>Remover</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mochila Spider Man</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantidade" onchange="atualizarTotal()">
+                        </td>
+                        <td>R$ 269,00</td>
+                        <td class="total">R$ 269,00</td>
+                        <td><button onclick="removerProduto(this)">Remover</button></td>
+                    </tr>
+                    <tr>
+                        <td>Mochila Capitão América</td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantidade" onchange="atualizarTotal()">
+                        </td>
+                        <td>R$ 110,00</td>
+                        <td class="total">R$ 110,00</td>
+                        <td><button onclick="removerProduto(this)">Remover</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Total -->
+            <div id="totalCarrinho">
+                <p><strong>Total:</strong> R$ <span id="totalPreco">379,00</span></p>
+                <button id="finalizarCompra" onclick="mostrarModalPix()">Finalizar Compra</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal PIX 
+    <div id="modalPix" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModalPix()">&times;</span>
+            <h2>Pagamento via PIX</h2>
+            <p><strong>Total da Compra:</strong> R$ <span id="totalModal"></span></p>
+            <p><strong>Chave PIX:</strong> exemplo@loja.com</p>
+            <p><strong>Instruções:</strong></p>
+            <ul>
+                <li>Abra o seu app bancário ou carteira de pagamentos.</li>
+                <li>Escolha a opção "Pagar via PIX".</li>
+                <li>Digite ou escaneie a chave PIX fornecida.</li>
+                <li>Confirme o pagamento e espere a confirmação.</li>
+            </ul>
+            <button onclick="confirmarPagamento()">Confirmar Pagamento</button>
+        </div>
+    </div> -->
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Club Vendas</p>
+    </footer>
+
+    <script src="js/carrinho.js"></script>
+</body>
+</html>

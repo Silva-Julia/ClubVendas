@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja Online</title>
+    <link rel="stylesheet" href="css/out.css">
+</head>
+<body>
+
+    <!-- Cabeçalho com Barra de Pesquisa e Abas de Navegação -->
+    <header>
+        <img src="img/logo.jpg" alt="logo" src="imagem.jpg" width="70" height="70">
+        <nav id="navAbas">
+            <a href="index.html">Home</a>
+            <a href="#">Categorias</a>
+            <a href="#">Carrinho</a>
+            <a href="#">Perfil</a>
+        </nav>
+        <input type="text" placeholder="Buscar produtos..." id="barraPesquisa">
+        <button onclick="buscarProduto()">Buscar</button>
+    </header>
+
+    <!-- Menu de Categorias -->
+    <nav id="categorias">
+        <a href="#">Eletrônicos</a>
+        <a href="#">Escola</a>
+        <a href="#">Casa e Jardim</a>
+        <a href="#">Esportes</a>
+        <a href="#">Ferramentas</a>
+        <a href="#">Brinquedo</a>
+
+    </nav>
+
+            <!-- Produto 1 -->
+            <main>
+                <section id="detalhesProduto">
+                    <div class="footer">
+                    <div class="produto">
+                        <img src="img/mochilaspiderman.png" alt="Mochila Spider Man" width="400" height="400">
+                        <h2><strong>Mochila Spider Man Denlex DL1497 Rodinha Reforçada</strong></h2>
+                        <p><strong>Preço: R$ 269,00</strong></p>
+                        <p><strong>Descrição:</strong>  Mochila com rodinhas reforçadas, ideal para crianças. Estilo Spider Man com design divertido e de alta qualidade.</p>
+                        <p><strong>Detalhes adicionais:</strong></p>
+                        <ul>
+                            <li><strong>Material:</strong>Poliéster</li>
+                            <li><strong>Dimensões:</strong> 30 x 15 x 45 cm</li>
+                            <li><strong>Cor:</strong> Vermelho e Azul</li>
+                        </ul>
+                        <button onclick="adicionarAoCarrinho('Mochila Spider Man', 269)">Adicionar ao Carrinho</button>
+                    </div>
+                </section> 
+
+                 <!-- Produtos Similares -->
+                 <section id="produtosSimilares">
+                 <h2>Produtos Similares</h2>
+                 <div class="produtos-similares">
+                 <!-- Produto Similar 1 -->
+                 <div class="produto-similar">
+                 <a href="detalhes-produto2.html">
+                        <img src="img/mochilacapitão.png" alt="Mochila Capitão América" width="200" height="300">
+                        <p><strong>Mochila do Capitão América</strong></p>
+                        <p><strong>Preço: R$ 110,00</strong></p>
+                    </a>
+                </div>
+
+                <!-- Produto Similar 2 -->
+                <div class="produto-similar">
+                    <a href="detalhes-produto3.html">
+                        <img src="img/mochilahulk.png" alt="Mochila Hulk" width="200" height="200">
+                        <p><strong>Mochila do Hulk</strong></p>
+                        <p><strong>Preço: R$ 95,00</strong></p>
+                    </a>
+                </div>
+
+                <!-- Produto Similar 3 -->
+                <div class="produto-similar">
+                    <a href="detalhes-produto4.html">
+                        <img src="img/mochilahomemferro.png" alt="Mochila do Homem de Ferro" width="200" height="250">
+                        <p><strong>Mochila do Homem de Ferro</strong></p>
+                        <p><strong>Preço: R$ 110,00</strong></p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+                <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Minha Loja Online</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

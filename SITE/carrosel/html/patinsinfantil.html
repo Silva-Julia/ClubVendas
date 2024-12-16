@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja Online</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho com Barra de Pesquisa e Abas de Navegação -->
+    <header>
+        <img src="img/logo.jpg" alt="logo" src="imagem.jpg" width="70" height="70">
+        <nav id="navAbas">
+            <a href="index.html">Home</a>
+            <a href="#">Categorias</a>
+            <a href="#">Carrinho</a>
+            <a href="#">Perfil</a>
+        </nav>
+        <input type="text" placeholder="Buscar produtos..." id="barraPesquisa">
+        <button onclick="buscarProduto()">Buscar</button>
+    </header>
+
+    <!-- Menu de Categorias -->
+    <nav id="categorias">
+        <a href="#">Eletrônicos</a>
+        <a href="#">Escola</a>
+        <a href="#">Casa e Jardim</a>
+        <a href="#">Esportes</a>
+        <a href="#">Ferramentas</a>
+        <a href="#">Brinquedo</a>
+
+    </nav>
+
+    <!-- Lista de Produtos -->
+            <main>
+                <section id="detalhesProduto">
+                    <div class="produto">
+                        <img src="img/patinsroller.png" alt="Patins Roller" width="400" height="300">
+                        <h2>Patins Inline Roller Sport Infantil Ajustável C/ Leds Semiprofissional</h2>
+                        <p><strong>Preço: R$ R$ 150,00</strong></p>
+                        <p><strong>Observações:</strong> Patins no tamanho ajustável com o botão na lateral. Tamanho P: Calça 29-32 Tamanho M: 33-36 Tamanho G: Calça 37-40. O patins tem um botão que quando apertado permite aumentar o diminuir o comprimento do patins. Recomendamos comprar pelo menos um número maior que a numeração do tenis. Os Patins Inline Semiprofissional foram especialmente desenvolvidos para quem quer praticar o esporte em alto nível. Rolamentos Abec 7 e rodas de poliuretano (PU), garantindo excelente performance. Os patins são super modernos e apresentam cores vibrantes que vão se encaixar perfeitamente aos seus pés. Eles são certificado pelo Inmetro e projetados com materiais de alta qualidade garantindo o conforto e agilidade necessária para a realização de altas manobras e muitas aventuras! A bota dos patins possuem tamanho ajustável. Os patins também possuem cinto em tiras autocolantes, sistema de amarração em cadarço e presilha reforçada para uma melhor estabilidade dos pés, além de botas acolchoadas para maior conforto. - Possui freio na bota para controle de velocidade - Cano flexível e sistema de ajuste para se adequar ao tamanho - Rodas de PU e rolamentos de aço Abec 7 - Possui Led na Roda Dianteira. </p>
+                        <h2> Descrição Detalhada: </h2> 
+                        <ul> 
+                            <li><strong>Peso máximo:</strong> 80 Kg </li>
+                            <li><strong>Conteúdo da Embalagem:</strong> Pacote 1x Par de Patins 1x Chave para Ajustes 1x Bolsa </li>	
+                            <li><strong>Classificação:</strong> Infantil </li>
+                            <li><strong>Cor:</strong> Roxo</li> 
+                            <li><strong>Marca:</strong> Inline </li>
+                            <li><strong>Tamanho:</strong> P, M e G</li>
+                        </ul>
+                        
+                        <button onclick="adicionarAoCarrinho('Patins Infantil', 150)">Adicionar ao Carrinho</button>
+                    </div>
+                </section>
+
+            <!-- Produtos Similares -->
+        <section id="produtosSimilares">
+            <h2>Produtos Similares</h2>
+            <div class="produtos-similares">
+                <!-- Produto Similar 1 -->
+                <div class="produto-similar">
+                    <a href="detalhes-produto2.html">
+                        <img src="img/patinsadulto.png" alt="Patins Profissionais Adulto" width="200" height="250">
+                        <p><strong>Mochila Foguete para Menino</strong></p>
+                        <p><strong>Preço: R$ 699,00</strong></p>
+                    </a>
+                </div>
+
+                <!-- Produto Similar 2 -->
+                <div class="produto-similar">
+                    <a href="detalhes-produto3.html">
+                        <img src="img/patinstradicional.png" alt="Patins Tradicional 4 Rodas" width="200" height="250">
+                        <p><strong>Patins Tradicional 4 Rodas</strong></p>
+                        <p><strong>Preço: R$ 199,00</strong></p>
+                    </a>
+                </div>
+
+                <!-- Produto Similar 3 -->
+                <div class="produto-similar">
+                    <a href="detalhes-produto4.html">
+                        <img src="img/patinssky.png" alt="Patins In Line Razors Sky" width="200" height="250">
+                        <p><strong>Patins Inline Razors SI Sky</strong></p>
+                        <p><strong>Preço: R$ 1799,00</strong></p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Minha Loja Online</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

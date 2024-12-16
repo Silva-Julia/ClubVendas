@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja Online</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+    
+    <!-- Cabeçalho com Barra de Pesquisa e Abas de Navegação -->
+    <header>
+        <img src="img/logo.jpg" alt="logo" src="imagem.jpg" width="70" height="70">
+        <nav id="navAbas">
+            <a href="index.html">Home</a>
+            <a href="#">Categorias</a>
+            <a href="carrinhodecompras.html">Carrinho</a>
+            <a href="login.html">Perfil</a>
+        </nav>
+        <input type="text" placeholder="Buscar produtos..." id="barraPesquisa">
+        <button onclick="buscarProduto()">Buscar</button>
+    </header>
+
+    <!-- Menu de Categorias -->
+    <nav id="categorias">
+        <a href="escolar.html">Escolar</a>
+        <a href="casa.html">Casa </a>
+        <a href="esportes.html">Esportes</a>
+        <a href="brinquedo.html">Brinquedo</a>
+
+    </nav>
+
+
+    <!-- Carrossel -->
+    <section class="carrossel">
+        <div class="carrossel-inner">
+            <input class="carrossel-open" type="radio" id="carrossel-1" name="carrossel"  checked="checked" hidden="" aria-hidden="true">
+            <div class="carrossel-item">
+                <img src="img/mochilaspiderman.png">
+            </div>
+            <input class="carrossel-open" type="radio" id="carrossel-2" name="carrossel" hidden="" aria-hidden="true">
+            <div class="carrossel-item">
+                <img src="img/controle.jpg">
+            </div>
+            <input class="carrossel-open" type="radio" id="carrossel-3" name="carrossel" hidden="" aria-hidden="true">
+            <div class="carrossel-item">
+                <img src="img/boladefutebol.png">
+            </div>
+            <input class="carrossel-open" type="radio" id="carrossel-4" name="carrossel" hidden="" aria-hidden="true">
+            <div class="carrossel-item">
+                <img src="Img/6CaixaGaveteiro.png">
+            </div>
+            <label for="carrossel-3" class="carrossel-control prev control-1">‹</label>
+            <label for="carrossel-2" class="carrossel-control next control-1">›</label>
+            <label for="carrossel-1" class="carrossel-control prev control-2">‹</label>
+            <label for="carrossel-3" class="carrossel-control next control-2">›</label>
+            <label for="carrossel-2" class="carrossel-control prev control-3">‹</label>
+            <label for="carrossel-4" class="carrossel-control next control-3">›</label>
+            <label for="carrossel-3" class="carrossel-control prev control-4">‹</label>
+            <label for="carrossel-1" class="carrossel-control next control-4">›</label>
+         
+    
+            <ol class="carrossel-indicators">
+                <li>
+                    <label for="carrossel-1" class="carrossel-bullet">•</label>
+                </li>
+                <li>
+                    <label for="carrossel-2" class="carrossel-bullet">•</label>
+                </li>
+                <li>
+                    <label for="carrossel-3" class="carrossel-bullet">•</label>
+                </li>
+                <li>
+                    <label for="carrossel-4" class="carrossel-bullet">•</label>
+                </li>
+               
+            </ol>
+        </div>
+    </section>
+      
+    
+    <!-- Lista de Produtos -->
+    <main>
+        <section id="produtos">
+            <!-- Produto 1 -->
+            <div class="produto">
+                <a href="mochilaspiderman.html">
+                <img src="img/mochilaspiderman.png" alt="Mochila" src="imagem.jpg" width="150" height="200">
+                </a>
+                <h2>Mochila Spider Man Denlex DL1497 Rodinha Reforçada</h2>
+                <p>R$ 269,00</p>
+                <button onclick="adicionarAoCarrinho('Mochila Spider Man', 269)">Adicionar ao Carrinho</button>
+            </div>
+        
+            <!-- Produto 2 -->
+            <div class="produto">
+                <a href="carrinhodecontrole.html">
+                <img src="img/controle.jpg" alt="Carrinho" src="imagem.jpg" width="150" height="200">
+                </a>
+                <h2>Carrinho De Controle Remoto Inteligente </h2>
+                <p>R$ 150,00</p>
+                <button onclick="adicionarAoCarrinho('Carrinho De Controle Remoto', 150)">Adicionar ao Carrinho</button>
+            </div>
+
+            <!-- Produto 3 -->
+            <div class="produto">
+                <a href="bingodemesa.html">
+                <img src="img/bingo.png" alt="Bingo" src="imagem.jpg" width="150" height="200">
+                </a>
+                <h2>Jogo De Mesa Bingo 48 Cartelas Kepler Diversão Em Família</h2>
+                <p>R$ 40,00</p>
+                <button onclick="adicionarAoCarrinho('Jogo De Mesa Bingo', 40)">Adicionar ao Carrinho</button>
+            </div>
+
+            <!-- Produto 4 -->
+            <div class="produto">
+                <a href="mochilaunicornio.html">
+                <img src="img/mochilaunicornio.jpg" alt="Produto 4" src="imagem.jpg" width="150" height="200">
+                </a>
+                <h2>Mochila unicornio Menina</h2>
+                <p>R$ 200,00</p>
+                <button onclick="adicionarAoCarrinho('Mochila', 200)">Adicionar ao Carrinho</button>
+            </div>
+
+            <!-- Produto 5 -->
+            <div class="produto">
+                <a href="garrafadobobesponja.html">
+                <img src="img/bob.png" alt="Garrafa Bob Esponja" src="imagem.jpg" width="150" height="200">
+                </a>
+                <h2>Garrafa Squeeze Personalizada Bob Esponja 750 ml </h2>
+                <p>R$ 50,00</p>
+                <button onclick="adicionarAoCarrinho('Garrafa', 50)">Adicionar ao Carrinho</button>
+            </div>
+
+            <!-- Produto 6 -->
+            <div class="produto">
+                <a href="mochilagameon.html">
+                <img src="img/mochilagame.jpg" alt="Mochila Game ON" src="imagem.jpg" width="110" height="200">
+                </a>
+                <h2>Mochila Costas Infantil Menino Gamer Video Game</h2>
+                <p>R$ 120,00</p>
+                <button onclick="adicionarAoCarrinho('Mochila Game ON', 120)">Adicionar ao Carrinho</button>
+            </div>
+
+            <!-- Produto 7 -->
+            <div class="produto">
+                <a href="mochilagatinho.html">
+                <img src="img/mochilagato.jpg" alt="Mochila Gatinho Infantil Feminina De Costas Menina Cor Prateado" src="imagem.jpg" width="120"height="200">
+                </a>
+                <h2>Mochila Gatinho Infantil Feminina De Costas Menina Cor Prateado</h2>
+                <p>R$ 120,00</p>
+                <button onclick="adicionarAoCarrinho('Mochila Gatinho', 300)">Adicionar ao Carrinho</button>
+            </div>
+
+            <!-- Produto 8 -->
+            <div class="produto">
+                <a href="garrafadocorinthians.html">
+                <img src="img/garrafadocorinthians.jpg" alt="Garrafa De Água Corinthians Oficial 600ml Squeeze Academia" src="imagem.jpg" width="100" height="200">
+                </a>
+                <h2>Garrafa De Água Corinthians Oficial 600ml Squeeze Academia</h2>
+                <p>R$ 90,00</p>
+                <button onclick="adicionarAoCarrinho('Garrafa Personalizada', 90)">Adicionar ao Carrinho</button>
+            </div>
+
+            <!-- Produto 9 -->
+             <div class="produto">
+                <a href="kit2gaveteiro.html">
+                <img src="img/kitgaveteiro.png" alt="Caixa" src="imagem.jpg" width="150" height="200">
+                </a>
+                <h2>Kit 2 Caixas Gaveiros </h2>
+                <p>R$ 100,00</p>
+                <button onclick="adicionarAoCarrinho('Gaveteiro', 150)">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Produto 10 -->
+            <div class="produto">
+                <a href="kit6gaveteiros.html"> 
+                <img src="img/6CaixaGaveteiro.png" alt="Caixa" src="imagem.jpg" width="150" height="200">
+                </a>
+                <h2>Kit 6 Caixas Gaveiros  </h2>
+                <p>R$ 150,00</p>
+                <button onclick="adicionarAoCarrinho('6CaixaGaveteiro', 150)">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Produto 11 -->
+            <div class="produto">
+                <a href="blocosdemontar.html">
+                <img src="img/blocosdemontar.png" alt="Bloco de Montar" src="imagem.png" width="150" height="200">
+                </a>
+                <h2>Blocos de Montar </h2>
+                <p>R$ 150,00</p>
+                <button onclick="adicionarAoCarrinho('Bloco de Montar', 150)">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Produto 12 -->
+            <div class="produto">
+                <a href="estojoMagali.html">
+                <img src="img/estojomagali.png" alt="Estojo Magali" src="imagem.jpg" width="150" height="150">
+                </a>
+                <h2>Estojo Magali </h2>
+                <p>R$ 50,00</p>
+                <button onclick="adicionarAoCarrinho('Estojo Magali', 150)">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Produto 13 -->
+            <div class="produto">
+                <a href="estojoMonica.html">
+                <img src="img/estojomonica.png" alt="Estojo Monica" src="imagem.jpg" width="150" height="156">
+                </a>
+                <h2>Estojo Monica</h2>
+                <p>R$ 50,00</p>
+                <button onclick="adicionarAoCarrinho('Estojo Monica', 150)">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Produto 14 -->
+            <div class="produto">
+                <a href="bola.html">
+                <img src="img/boladefutebol.png" alt="Bola" src="imagem.jpg" width="150" height="200">
+                </a>
+                <h2>Bola de Futebol de Campo Corinthians Black</h2>
+                <p>R$ 70,00</p>
+                <button onclick="adicionarAoCarrinho('Bola de Futebol', 150)">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Produto 15 -->
+            <div class="produto">
+                <a href="JarradeVidro.html">
+                <img src="img/jarradevidro.png" alt="Jarra de Vidro" src="imagem.jpg" width="150" height="200">
+                </a>
+                <h2>Jarra de Vidro</h2>
+                <p>R$ 150,00</p>
+                <button onclick="adicionarAoCarrinho('Jarro de Vidro', 150)">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Produto 16 -->
+            <div class="produto"> 
+                <a href="lousaMagica.html">
+                <img src="img/lousamagica.png" alt="Lousa Magica" src="imagem.jpg" width="150" height="200">
+                </a>
+                <h2>Lousa Magica  </h2>
+                <p>R$ 150,00</p>
+                <button onclick="adicionarAoCarrinho('Lousa Magica', 150)">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Produto 17-->
+            <div class="produto">
+                <a href="bicicleta.html">
+                <img src="img/bicicletaaro.png" alt="Bicicleta" src="imagem.jpg" width="150" height="200">
+                </a>
+                <h2>Bicicleta Aro 29 Spaceline Vega Alumínio 24v Freio a Disco Supensão MTB</h2>
+                <p>R$ 500,00</p>
+                <button onclick="adicionarAoCarrinho('Bicicleta Aro 29 ', 150)">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Produto 18-->
+            <div class="produto">
+                <a href="patinsinfantil.html">
+                <img src="img/patinsroller.png" alt="Patins Infantil" src="imagem.jpg" width="110"height="200">
+                </a>
+                <h2>Patins Inline Roller Sport Infantil Ajustável C/ Leds Semiprofissional</h2>
+                <p>R$ 150,00</p>
+                <button onclick="adicionarAoCarrinho('Patins Inline Roller ', 150)">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+    </main>
+    
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Club Vendas</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+    <script>
+        let currentSlide = 1;
+    
+        function autoPlay() {
+            currentSlide = (currentSlide % 4) + 1;
+            document.getElementById(`carrossel-${currentSlide}`).checked = true;
+        }
+    
+        setInterval(autoPlay, 3000);  // Mudar a cada 3 segundos
+    </script>
+    
+</body>
+</html>
+

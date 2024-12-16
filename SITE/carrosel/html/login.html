@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Vendedor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Tela de login -->
+    <div id="login-container">
+        <h2>Login do Vendedor</h2>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Nome de usuário" required>
+            <input type="password" id="password" placeholder="Senha" required>
+            <label for="show-password">
+                <input type="checkbox" id="show-password"> Ver senha
+            </label>
+            <button type="submit">Entrar</button>
+        </form>
+        <p id="login-error" style="color: red; display: none;">Usuário ou senha incorretos</p>
+    </div>
+
+    <!-- Área do vendedor (visível após login) -->
+    <div id="vendedor-container" style="display: none;">
+        <h2>Bem-vindo, <span id="vendedor-name"></span>!</h2>
+        <button id="logout-btn">Sair</button>
+
+        <h3>Gerenciar Produtos</h3>
+        <form id="product-form">
+            <input type="text" id="product-name" placeholder="Nome do produto" required>
+            <input type="number" id="product-price" placeholder="Preço do produto" required>
+            <input type="file" id="product-image" accept="image/*">
+            <button type="submit">Adicionar Produto</button>
+        </form>
+
+        <h3>Lista de Produtos</h3>
+        <ul id="product-list"></ul>
+
+    <!-- Script JavaScript embutido -->
+    <script>
+        // Usuário fixo para o login (para demonstração)
+        const correctUsername = "Vendedor";
+        const correctPassword = "ClubVendas";
+
+        // Produtos (em um sistema real, os produtos seriam armazenados no banco de dados)
+        let products = [];
+        let totalPrice = 0; // Total para pagamento
+
+        // Referências DOM
+        const loginContainer = document.getElementById('login-container');
+        const vendedorContainer = document.getElementById('vendedor-container');
+        const productList = document.getElementById('product-list');
+        const vendedorName = document.getElementById('vendedor-name');
+        const loginForm = document.getElementById('login-form');
+        const productForm = document.getElementById('product-form');
+        const loginError = document.getElementById('login-error');
+        const logoutBtn = document.getElementById('logout-btn');
+        const showPasswordCheckbox = document.getElementById('show-password');
+        const passwordField = document.getElementById('password');
+        const pixCodeInput = document.getElementById('pix-code');
+        const totalPriceElement = document.getElementById('total-price');
+        const paymentForm = document.getElementById('payment-form');
+        const paymentSuccess = document.getElementById('payment-success');
+        const paymentError = document.getElementById('payment-error');
+
+        // Função para exibir os produtos
+        function displayProducts() {
+            productList.innerHTML = '';
+            totalPrice = 0;
+            products.forEach(product => {
+                const li = document.createElement('li');
+                li.textContent = `${product.name} - R$${product.price}`;
+                productList.appendChild(li);
+                totalPrice += product.price;
+            });
+            totalPriceElement.textContent = totalPrice.toFixed(2); // Atualiza o valor total
+        }
+
+        // Função para fazer login
+        function login(username, password) {
+            if (username === correctUsername && password === correctPassword) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        // Função para o evento de login
+        loginForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (login(username, password)) {
+                loginContainer.style.display = 'none';
+                vendedorContainer.style.display = 'block';
+                vendedorName.textContent = username;
+                displayProducts();
+            } else {
+                loginError.style.display = 'block';
+            }
+        });
+
+        // Função para o evento de adicionar produto
+        productForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const productName = document.getElementById('product-name').value;
+            const productPrice = document.getElementById('product-price').value;
+
+            if (productName && productPrice) {
+                products.push({ name: productName, price: parseFloat(productPrice) });
+                displayProducts();
+            }
+        });
+
+        // Função para mostrar/ocultar a senha
+        showPasswordCheckbox.addEventListener('change', function() {
+            if (showPasswordCheckbox.checked) {
+                passwordField.type = 'text'; // Mostra a senha
+            } else {
+                passwordField.type = 'password'; // Esconde a senha
+            }
+        });
+
+        // Função para confirmar pagamento via Pix
+        paymentForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const pixCode = pixCodeInput.value;
+
+            // Código Pix de exemplo para validação
+            const validPixCode = "12345"; // Esse é o código Pix correto (para simulação)
+
+            if (pixCode === validPixCode) {
+                paymentSuccess.style.display = 'block';
+                paymentError.style.display = 'none';
+            } else {
+                paymentError.style.display = 'block';
+                paymentSuccess.style.display = 'none';
+            }
+        });
+
+        // Função para logout
+        logoutBtn.addEventListener('click', function() {
+            vendedorContainer.style.display = 'none';
+            loginContainer.style.display = 'block';
+            document.getElementById('username').value = '';
+            document.getElementById('password').value = '';
+            loginError.style.display = 'none';
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+/* Estilo Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 16px;
+}
+
+header {
+    background-color: #0073e6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav {
+    margin-top: 15px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #00b4d8;
+}
+
+/* Carrinho */
+#carrinho {
+    margin: 20px auto;
+    width: 80%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#tabelaCarrinho {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#tabelaCarrinho th, #tabelaCarrinho td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+#tabelaCarrinho th {
+    background-color: #00b4d8;
+    color: white;
+}
+
+#tabelaCarrinho td {
+    background-color: #f9f9f9;
+}
+
+#tabelaCarrinho td input[type="number"] {
+    width: 50px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00b4d8;
+}
+
+/* Total Carrinho */
+#totalCarrinho {
+    text-align: right;
+    margin-top: 20px;
+}
+
+#totalCarrinho p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#finalizarCompra {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#finalizarCompra:hover {
+    background-color: #218838;
+}
+
+/* Rodapé */
+footer {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+}

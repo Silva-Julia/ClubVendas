@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos de esportes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+    
+    <!-- Cabeçalho com Barra de Pesquisa e Abas de Navegação -->
+    <header>
+        <img src="img/logo.jpg" alt="logo" src="imagem.jpg" width="70" height="70">
+        <nav id="navAbas">
+            <a href="index.html">Home</a>
+            <a href="#">Categorias</a>
+            <a href="carrinhodecompras.html">Carrinho</a>
+            <a href="login.html">Perfil</a>
+        </nav>
+        <input type="text" placeholder="Buscar produtos..." id="barraPesquisa">
+        <button onclick="buscarProduto()">Buscar</button>
+    </header>
+
+    <!-- Menu de Categorias -->
+    <nav id="categorias">
+        <a href="escolar.html">Escolar</a>
+        <a href="casa.html">Casa </a>
+        <a href="esportes.html">Esportes</a>
+        <a href="brinquedo.html">Brinquedo</a>
+
+    </nav>
+      
+    
+    <!-- Lista de Produtos -->
+    <main>
+        <section id="produtos">
+           
+            <!-- Produto 14 -->
+            <div class="produto">
+                <a href="bola.html">
+                <img src="img/boladefutebol.png" alt="Bola" src="imagem.jpg" width="150" height="200">
+                </a>
+                <h2>Bola de Futebol de Campo Corinthians Black</h2>
+                <p>R$ 70,00</p>
+                <button onclick="adicionarAoCarrinho('Bola de Futebol', 150)">Adicionar ao Carrinho</button>
+            </div>
+
+
+            <!-- Produto 17-->
+            <div class="produto">
+                <a href="bicicleta.html">
+                <img src="img/bicicletaaro.png" alt="Bicicleta" src="imagem.jpg" width="150" height="200">
+                </a>
+                <h2>Bicicleta Aro 29 Spaceline Vega Alumínio 24v Freio a Disco Supensão MTB</h2>
+                <p>R$ 500,00</p>
+                <button onclick="adicionarAoCarrinho('Bicicleta Aro 29 ', 150)">Adicionar ao Carrinho</button>
+            </div>
+
+
+            <!-- Produto 18-->
+            <div class="produto">
+                <a href="patinsinfantil.html">
+                <img src="img/patinsroller.png" alt="Patins Infantil" src="imagem.jpg" width="110"height="200">
+                </a>
+                <h2>Patins Inline Roller Sport Infantil Ajustável C/ Leds Semiprofissional</h2>
+                <p>R$ 150,00</p>
+                <button onclick="adicionarAoCarrinho('Patins Inline Roller ', 150)">Adicionar ao Carrinho</button>
+            </div>
+
+
+        </section>
+    </main>
+    
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Club Vendas</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+    <script>
+        let currentSlide = 1;
+    
+        function autoPlay() {
+            currentSlide = (currentSlide % 4) + 1;
+            document.getElementById(`carrossel-${currentSlide}`).checked = true;
+        }
+    
+        setInterval(autoPlay, 3000);  // Mudar a cada 3 segundos
+    </script>
+</body>
+</html>
+

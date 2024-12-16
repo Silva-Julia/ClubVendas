@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja Online</title>
+    <link rel="stylesheet" href="css/out.css">
+</head>
+<body>
+
+    <!-- Cabeçalho com Barra de Pesquisa e Abas de Navegação -->
+    <header>
+        <img src="img/logo.jpg" alt="logo" src="imagem.jpg" width="70" height="70">
+        <nav id="navAbas">
+            <a href="index.html">Home</a>
+            <a href="#">Categorias</a>
+            <a href="#">Carrinho</a>
+            <a href="#">Perfil</a>
+        </nav>
+        <input type="text" placeholder="Buscar produtos..." id="barraPesquisa">
+        <button onclick="buscarProduto()">Buscar</button>
+    </header>
+
+    <!-- Menu de Categorias -->
+    <nav id="categorias">
+        <a href="#">Eletrônicos</a>
+        <a href="#">Escola</a>
+        <a href="#">Casa e Jardim</a>
+        <a href="#">Esportes</a>
+        <a href="#">Ferramentas</a>
+        <a href="#">Brinquedo</a>
+
+    </nav>
+
+    <!-- Lista de Produtos -->
+            <!-- Produto 4 -->
+            <main>
+                <section id="detalhesProduto">
+
+                    <div class="produto">
+                        <img src="img/mochilaunicornio.jpg" alt="Mochila Unicórnios" width="400" height="450">
+                        <h2>Mochila De Alças Escolar Feminina Unicórnios Power Denlex</h2>
+                        <p><strong>Preço: R$ 78,90</strong></p>
+                        <p>Descrição: 
+                            Mochila Escolar Infantil Grande Masculina Costas
+                            
+                            Espaço interno ótimo, resistente para uso diário
+                            
+                            Design moderno e autêntico
+                            
+                            Composição: 100% Poliéster
+                            2 bolsos laterais para garrafas
+                            1 bolso principal para cadernos e estojos
+                            1 bolso frontal transparente
+                            Acabamento excelente
+                            Mochila com alças reforçadas
+                            Alças de ombro acolchoadas
+                            Alça fixa na parte superior
+                            Etiqueta para identificação na parte traseira
+                            Confortável e totalmente ajustável, adapta-se bem ao corpo
+                            Tamanho aproximado 41,5cm Altura x 29,5cm Largura x 14cm Profundidade</p>
+                        <ul>
+                            <li>Material: Poliéster</li>
+                            <li>Dimensões: 41,5x 29,5 x 14 cm</li>
+                            <li>Cor: Cinza-escuro</li>
+                        </ul>
+                        <button onclick="adicionarAoCarrinho('Mochila unicornio', 78,90)">Adicionar ao Carrinho</button>
+                        </div>
+                        </section>
+                        </main>
+
+                          <!-- Produtos Similares -->
+                          <section id="produtosSimilares">
+                          <h2>Produtos Similares</h2>
+                          <div class="produtos-similares">
+                          <!-- Produto Similar 1 -->
+                          <div class="produto-similar">
+                 <a href="detalhes-produto2.html">
+                        <img src="img/mochilaainimais.png" alt="Mochila de Animais" width="200" height="250">
+                        <p><strong>Mochila de Animais</strong></p>
+                        <p><strong>Preço: R$ 99,99</strong></p>
+                    </a>
+                </div>
+
+                <!-- Produto Similar 2 -->
+                <div class="produto-similar">
+                    <a href="detalhes-produto3.html">
+                        <img src="img/mochiladinossauro.png" alt="Mochila do Dinossauro" width="200" height="250">
+                        <p><strong>Mochila do Dinossauro</strong></p>
+                        <p><strong>Preço: R$ 95,00</strong></p>
+                    </a>
+                </div>
+
+                <!-- Produto Similar 3 -->
+                <div class="produto-similar">
+                    <a href="detalhes-produto4.html">
+                        <img src="img/mochilaicecream.png" alt="Mochila de Sorvete Colorido" width="200" height="250">
+                        <p><strong>Mochila Infantil Spark Style Sorvete</strong></p>
+                        <p><strong>Preço: R$ 99,99</strong></p>
+                    </a>
+                </div>
+            </div>
+        </section>
+            
+                <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Minha Loja Online</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

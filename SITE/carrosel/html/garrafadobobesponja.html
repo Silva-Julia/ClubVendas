@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja Online</title>
+    <link rel="stylesheet" href="css/out.css">
+</head>
+<body>
+
+    <!-- Cabeçalho com Barra de Pesquisa e Abas de Navegação -->
+    <header>
+        <img src="img/logo.jpg" alt="logo" src="imagem.jpg" width="70" height="70">
+        <nav id="navAbas">
+            <a href="index.html">Home</a>
+            <a href="#">Categorias</a>
+            <a href="#">Carrinho</a>
+            <a href="#">Perfil</a>
+        </nav>
+        <input type="text" placeholder="Buscar produtos..." id="barraPesquisa">
+        <button onclick="buscarProduto()">Buscar</button>
+    </header>
+
+    <!-- Menu de Categorias -->
+    <nav id="categorias">
+        <a href="#">Eletrônicos</a>
+        <a href="#">Escola</a>
+        <a href="#">Casa e Jardim</a>
+        <a href="#">Esportes</a>
+        <a href="#">Ferramentas</a>
+        <a href="#">Brinquedo</a>
+
+    </nav>
+
+    <!-- Lista de Produtos -->
+            <main>
+                <section id="detalhesProduto">
+                    <div class="produto">
+                        <img src="img/bob.png" alt="Garrafa Personalizada Bob Esponja" width="100" height="300">
+                        <h2>Garrafa de Água Personalizada Bob Esponja 600ml Squeeze</h2>
+                        <p><strong>Preço: R$ R$ 50,00</strong></p>
+                        <p>Descrição: A Garrafa de Inox Personalizada 600ml é fabricada com materiais de alta qualidade, pensados para garantir durabilidade, segurança e eficiência. Aqui estão os principais componentes:
+                            <ul>
+                                <li><strong>Aço Inoxidável 18/8 (304):</strong> A garrafa é produzida com aço inoxidável de grau 18/8, também conhecido como 304, que é resistente à corrosão e manchas, proporcionando maior longevidade e resistência. Esse material é amplamente utilizado em utensílios de cozinha e produtos de consumo, sendo seguro, fácil de limpar e livre de metais pesados.</li>
+                                <li><strong>Tampa de Polipropileno (PP):</strong> A tampa da garrafa é feita de polipropileno (PP), um material plástico resistente e não tóxico, que é durável, livre de BPA e oferece uma vedação eficaz para evitar vazamentos. Sua construção sólida garante que a garrafa seja hermética, mantendo suas bebidas seguras por mais tempo.</li>
+                                <li><strong>Forro Interno de Aço Inoxidável:</strong> O interior da garrafa é revestido com aço inoxidável, que ajuda a manter a bebida fresca ou aquecida por várias horas, sem alterar o sabor ou odor. O aço inox é ideal para quem busca praticidade e durabilidade, além de ser resistente à oxidação e ao desgaste.</li>
+                                <li><strong>Tecnologia Térmica:</strong> A garrafa é projetada com isolamento de dupla parede, utilizando uma camada de ar ou vácuo entre as paredes internas e externas, o que proporciona um efeito térmico que mantém a temperatura das bebidas. Isso significa que ela pode manter sua bebida fria por até 12 horas ou quente por até 8 horas, sem condensação externa.</li>
+                              </ul>
+                        </p>
+                       <p><strong>Garrafa Personalizada do Bob Esponja</strong></p>
+                        <p><strong>Tamanho:</strong>Médio</p>
+                        <p><strong>Cor:</strong>Amarelo</p>
+                        <button onclick="adicionarAoCarrinho('Garrafa de Água', 150)">Adicionar ao Carrinho</button>
+                    </div>
+                </section>
+            <!-- Produtos Similares -->
+        <section id="produtosSimilares">
+            <h2>Produtos Similares</h2>
+            <div class="produtos-similares">
+                <!-- Produto Similar 1 -->
+                <div class="produto-similar">
+                    <a href="detalhes-produto2.html">
+                        <img src="img/garrafafrozen.png" alt="Garrafa de Água Frozen" width="200" height="200">
+                        <p><strong>Garrafa de Água Frozen 600ml</strong></p>
+                        <p><strong>Preço: R$ 55,00</strong></p>
+                    </a>
+                </div>
+
+                <!-- Produto Similar 2 -->
+                <div class="produto-similar">
+                    <a href="detalhes-produto3.html">
+                        <img src="img/garrafabatman.png" alt="Garrafa de Água Batman 500ml" width="200" height="200">
+                        <p><strong>Garrafa de Água Batman 500ml</strong></p>
+                        <p><strong>Preço: R$ 45,00</strong></p>
+                    </a>
+                </div>
+
+                <!-- Produto Similar 3 -->
+                <div class="produto-similar">
+                    <a href="detalhes-produto4.html">
+                        <img src="img/garrafaminnie.png" alt="Garrafa de Água Minnie 600ml" width="200" height="200">
+                        <p><strong>Garrafa de Água Minnie 600ml</strong></p>
+                        <p><strong>Preço: R$ 48,00</strong></p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Minha Loja Online</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+

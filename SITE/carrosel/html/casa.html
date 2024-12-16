@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos de casa</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+    
+    <!-- Cabeçalho com Barra de Pesquisa e Abas de Navegação -->
+    <header>
+        <img src="img/logo.jpg" alt="logo" src="imagem.jpg" width="70" height="70">
+        <nav id="navAbas">
+            <a href="index.html">Home</a>
+            <a href="#">Categorias</a>
+            <a href="carrinhodecompras.html">Carrinho</a>
+            <a href="login.html">Perfil</a>
+        </nav>
+        <input type="text" placeholder="Buscar produtos..." id="barraPesquisa">
+        <button onclick="buscarProduto()">Buscar</button>
+    </header>
+
+    <!-- Menu de Categorias -->
+    <nav id="categorias">
+        <a href="escolar.html">Escolar</a>
+        <a href="casa.html">Casa </a>
+        <a href="esportes.html">Esportes</a>
+        <a href="brinquedo.html">Brinquedo</a>
+
+    </nav>
+
+    
+    <!-- Lista de Produtos -->
+    <main>
+        <section id="produtos">
+            
+            <!-- Produto 9 -->
+             <div class="produto">
+                <a href="kit2gaveteiro.html">
+                <img src="img/kitgaveteiro.png" alt="Caixa" src="imagem.jpg" width="150" height="200">
+                </a>
+                <h2>Kit 2 Caixas Gaveiros </h2>
+                <p>R$ 100,00</p>
+                <button onclick="adicionarAoCarrinho('Gaveteiro', 150)">Adicionar ao Carrinho</button>
+            </div>
+
+            <!-- Produto 10 -->
+            <div class="produto">
+                <a href="kit6gaveteiros.html"> 
+                <img src="img/6CaixaGaveteiro.png" alt="Caixa" src="imagem.jpg" width="150" height="200">
+                </a>
+                <h2>Kit 6 Caixas Gaveiros  </h2>
+                <p>R$ 150,00</p>
+                <button onclick="adicionarAoCarrinho('6CaixaGaveteiro', 150)">Adicionar ao Carrinho</button>
+            </div>
+
+            
+            <!-- Produto 15 -->
+            <div class="produto">
+                <a href="JarradeVidro.html">
+                <img src="img/jarradevidro.png" alt="Jarra de Vidro" src="imagem.jpg" width="150" height="200">
+                </a>
+                <h2>Jarra de Vidro</h2>
+                <p>R$ 150,00</p>
+                <button onclick="adicionarAoCarrinho('Jarro de Vidro', 150)">Adicionar ao Carrinho</button>
+            </div>
+
+        </section>
+    </main>
+    
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Club Vendas</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+    <script>
+        let currentSlide = 1;
+    
+        function autoPlay() {
+            currentSlide = (currentSlide % 4) + 1;
+            document.getElementById(`carrossel-${currentSlide}`).checked = true;
+        }
+    
+        setInterval(autoPlay, 3000);  // Mudar a cada 3 segundos
+    </script>
+    
+</body>
+</html>
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja Online</title>
+    <link rel="stylesheet" href="css/out.css">
+</head>
+<body>
+
+    <!-- Cabeçalho com Barra de Pesquisa e Abas de Navegação -->
+    <header>
+        <img src="img/logo.jpg" alt="logo" src="imagem.jpg" width="70" height="70">
+        <nav id="navAbas">
+            <a href="index.html">Home</a>
+            <a href="#">Categorias</a>
+            <a href="#">Carrinho</a>
+            <a href="#">Perfil</a>
+        </nav>
+        <input type="text" placeholder="Buscar produtos..." id="barraPesquisa">
+        <button onclick="buscarProduto()">Buscar</button>
+    </header>
+
+    <!-- Menu de Categorias -->
+    <nav id="categorias">
+        <a href="#">Eletrônicos</a>
+        <a href="#">Escola</a>
+        <a href="#">Casa e Jardim</a>
+        <a href="#">Esportes</a>
+        <a href="#">Ferramentas</a>
+        <a href="#">Brinquedo</a>
+
+    </nav>
+
+    <!-- Lista de Produtos -->
+            <main>
+                <section id="detalhesProduto">
+                    <div class="produto">
+                        <img src="img/controle.jpg" alt="Carrinho De Controle Remoto Inteligente" width="400" height="400">
+                        <h2>Carrinho De Controle Remoto Inteligente 9 Funções</h2>
+                        <p><strong>Preço: R$ R$ 150,00</strong></p>
+                        <p><strong>Descrição:</strong> Este veículo com controle remoto é a maneira ideal de entreter e brincar por horas a fio. Ao ser controlado remotamente com um controle remoto, você poderá fazê-lo vagar onde quiser, projetando as trilhas e caminhos mais engraçados.</p>
+                        <p><strong>Detalhes adicionais:</strong></p>
+                        </p>
+                        <ul>
+                            <li>A idade mínima recomendada para usá-lo é 3 anos.</li>
+                            <li>Velocidade Máxima: km/h</li>
+                            <li>Cor: Preto</li>
+                        </ul>
+                        </p>
+                        <button onclick="adicionarAoCarrinho('CARRINHO', 150)">Adicionar ao Carrinho</button>
+                    </div>
+                </section>
+                <!-- Produtos Similares -->
+                <section id="produtosSimilares">
+                    <h2>Produtos Similares</h2>
+                    <div class="produtos-similares">
+                    <!-- Produto Similar 1 -->
+                    <div class="produto-similar">
+                    <a href="detalhes-produto2.html">
+                           <img src="img/dinoussauroremoto.png" alt="Dinossauro Remoto" width="200" height="200">
+                           <p><strong>Dinossauro com Controle Remoto</strong></p>
+                           <p><strong>Preço: R$ 200,00</strong></p>
+                       </a>
+                   </div>
+   
+                   <!-- Produto Similar 2 -->
+                   <div class="produto-similar">
+                       <a href="detalhes-produto3.html">
+                           <img src="img/tanquedecontroleremoto.png" alt="Tanque de Guerra" width="200" height="200">
+                           <p><strong>Tanque de Guerra com Controle Remoto</strong></p>
+                           <p><strong>Preço: R$ 225,00</strong></p>
+                       </a>
+                   </div>
+   
+                   <!-- Produto Similar 3 -->
+                   <div class="produto-similar">
+                       <a href="detalhes-produto4.html">
+                           <img src="img/carrodecontroleremoto.png" alt="Carro com Controle Remoto" width="200" height="250">
+                           <p><strong>Carrinho de Controle Remoto</strong></p>
+                           <p><strong>Preço: R$ 150,00</strong></p>
+                       </a>
+                   </div>
+               </div>
+           </section>
+       </main>
+                <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Minha Loja Online</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+

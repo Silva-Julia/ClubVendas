@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja Online</title>
+    <link rel="stylesheet" href="css/out.css">
+</head>
+<body>
+
+    <!-- Cabeçalho com Barra de Pesquisa e Abas de Navegação -->
+    <header>
+        <img src="img/logo.jpg" alt="logo" src="imagem.jpg" width="70" height="70">
+        <nav id="navAbas">
+            <a href="index.html">Home</a>
+            <a href="#">Categorias</a>
+            <a href="#">Carrinho</a>
+            <a href="#">Perfil</a>
+        </nav>
+        <input type="text" placeholder="Buscar produtos..." id="barraPesquisa">
+        <button onclick="buscarProduto()">Buscar</button>
+    </header>
+
+    <!-- Menu de Categorias -->
+    <nav id="categorias">
+        <a href="#">Eletrônicos</a>
+        <a href="#">Escola</a>
+        <a href="#">Casa e Jardim</a>
+        <a href="#">Esportes</a>
+        <a href="#">Ferramentas</a>
+        <a href="#">Brinquedo</a>
+
+    </nav>
+
+    <!-- Lista de Produtos -->
+            <main>
+                <section id="detalhesProduto">
+                    <div class="produto">
+                        <img src="img/bicicletaaro.png" alt="Bicicleta Aro 29" width="400" height="400">
+                        <h2>Bicicleta Aro 29 Spaceline Vega Alumínio 24v Freio a Disco Supensão MTB</h2>
+                        <p><strong>Preço: R$ R$ 500,00</strong></p>
+                        <p><strong>Descrição</strong> Bicicleta Aro 29 Spaceline Vega Alumínio 24v Freio a Disco Supensão MTB
+                            Explore a natureza ou curta passeios urbanos com a bicicleta Spaceline Aro 29, uma opção robusta e versátil para quem busca performance e conforto em trilhas leves e passeios. Com 24 marchas e suspensão dianteira de 100mm, ela garante uma experiência suave e ajustável em diferentes tipos de terreno..</p>
+                            <section id="detalhesProduto">
+                                <h2>Descrição Detalhada</h2>
+                                <ul>
+                                    <li><strong>Gênero:</strong> Unissex</li>
+                                    <li><strong>Modalidade:</strong> Passeio</li>
+                                    <li><strong>Aro:</strong> 29</li>
+                                    <li><strong>Marchas:</strong> 24</li>
+                                    <li><strong>Suspensão:</strong> Dianteira com garfo preto de 100mm</li>
+                                    <li><strong>Indicação:</strong> Ideal para praticantes que buscam passeios e trilhas leves</li>
+                                    <li><strong>Material do quadro:</strong> Alumínio 6061, leve e resistente</li>
+                                    <li><strong>Aros:</strong> Aero 36 furos, folha dupla de alumínio, proporcionando mais resistência</li>
+                                    <li><strong>Pneus:</strong> Cravos baixos para melhor aderência em terrenos variados</li>
+                                    <li><strong>Cubos:</strong> Aço para disco com blocagens, 36 furos</li>
+                                    <li><strong>Freios:</strong> Disco mecânico de 160mm, oferecendo maior segurança e controle</li>
+                                    <li><strong>Pedivela:</strong> Reduzido em aço, com coroas 24/34/42 (a proteção de plástico não faz parte do produto e pode ser enviada ou não)</li>
+                                    <li><strong>Guidão:</strong> Aço robusto para maior durabilidade</li>
+                                    <li><strong>Selim:</strong> Sport em PU, com carrinho para ajuste preciso</li>
+                                    <li><strong>Câmbios:</strong> Dianteiro 3v e traseiro 8v, com trocador de marchas de engate rápido, totalizando 24 velocidades</li>
+                                </ul>
+                            
+                                <h3>Observações importantes</h3>
+                                
+                                    <p>bicicleta é indicada para passeios tranquilos e trilhas leves, não sendo recomendada para manobras radicais ou trilhas mais pesadas.</p>
+                                    <p>O tamanho ideal de quadro para seu conforto e segurança.</p> 
+                                    <p>A montagem deve ser feita por um especialista e a garantia de 90 dias é válida para bicicletas montadas e revisadas em oficinas autorizadas.</p>
+                                
+                            </section>
+                        <button onclick="adicionarAoCarrinho('Bicicleta Aro 29', 150)">Adicionar ao Carrinho</button>
+                    </div>
+                </section>
+
+            <!-- Produtos Similares -->
+        <section id="produtosSimilares">
+            <h2>Produtos Similares</h2>
+            <div class="produtos-similares">
+                <!-- Produto Similar 1 -->
+                <div class="produto-similar">
+                    <a href="detalhes-produto2.html">
+                        <img src="img/bicicleta aro 24.jpg" alt="Bicicleta Aro 26" width="200" height="200">
+                        <p><strong>Bicicleta Aro 26 Alpha 21v</strong></p>
+                        <p><strong>Preço: R$ 450,00</strong></p>
+                    </a>
+                </div>
+                <!-- Produto Similar 2 -->
+                <div class="produto-similar">
+                    <a href="detalhes-produto3.html">
+                        <img src="img/bicicleta aro 26.webp" alt="Bicicleta Aro 29 Premium" width="200" height="200">
+                        <p><strong>Bicicleta Aro 29 Premium MTB</strong></p>
+                        <p><strong>Preço: R$ 550,00</strong></p>
+                    </a>
+                </div>
+                <!-- Produto Similar 3 -->
+                <div class="produto-similar">
+                    <a href="detalhes-produto4.html">
+                        <img src="img/bicicleta aro 27.webp"c alt="Bicicleta Aro 27.5" width="200" height="200">
+                        <p><strong>Bicicleta Aro 27.5 Trek</strong></p>
+                        <p><strong>Preço: R$ 480,00</strong></p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Minha Loja Online</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+

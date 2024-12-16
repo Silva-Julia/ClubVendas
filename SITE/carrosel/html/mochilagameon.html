@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja Online</title>
+    <link rel="stylesheet" href="css/out.css">
+</head>
+<body>
+
+    <!-- Cabeçalho com Barra de Pesquisa e Abas de Navegação -->
+    <header>
+        <img src="img/logo.jpg" alt="logo" src="imagem.jpg" width="70" height="70">
+        <nav id="navAbas">
+            <a href="index.html">Home</a>
+            <a href="#">Categorias</a>
+            <a href="#">Carrinho</a>
+            <a href="#">Perfil</a>
+        </nav>
+        <input type="text" placeholder="Buscar produtos..." id="barraPesquisa">
+        <button onclick="buscarProduto()">Buscar</button>
+    </header>
+
+    <!-- Menu de Categorias -->
+    <nav id="categorias">
+        <a href="#">Eletrônicos</a>
+        <a href="#">Escola</a>
+        <a href="#">Casa e Jardim</a>
+        <a href="#">Esportes</a>
+        <a href="#">Ferramentas</a>
+        <a href="#">Brinquedo</a>
+
+    </nav>
+
+    <!-- Lista de Produtos -->
+            <main>
+                <section id="detalhesProduto">
+                    <div class="produto">
+                        <img src="img/mochilagame.jpg" alt="Mochila Game ON" width="400" height="400">
+                        <h2>Mochila Costas Infantil Menino Gamer Video Game</h2>
+                        <p><strong>Preço: R$ R$ 120,00</strong></p>
+                        <p>Descrição: Esta mochila masculina infantil foi projetada para oferecer praticidade, conforto e muito estilo para os pequenos. Ideal para a escola, passeios e atividades do dia a dia, ela combina resistência e design moderno, garantindo a organização e o bem-estar dos meninos.</p>
+                        <h2> Especificações: </h2> 
+                        <ul> 
+                            <li><strong>Material:</strong> Poliéster de alta resistência</li>
+                            <li><strong>Dimensões:</strong>40 cm (altura) x 30 cm (largura) x 15 cm (profundidade)</li>	
+                            <li><strong>Bolsos:</strong>1 principal grande, 2 laterais e 1 frontal com zípe</li>
+                            <li><strong>Peso:</strong>300g</li> 
+                            <li><strong>Alças:</strong>Ajustáveis e acolchoadas, com ajuste de comprimento</li>
+                            <li><strong>Cor:</strong>Azul</li>
+                            <h3>Observações importantes:</h3>
+                            <ul>
+                              <p><strong>Recomendação:</strong> Ideal para meninos de 6 a 12 anos, para uso diário na escola, passeios e atividades ao ar livre.</p>
+                              <p><strong>Cuidados:</strong>Para garantir maior durabilidade, lavar à mão e secar à sombra.</p>
+                            </ul>
+                        </ul>
+                        
+                        <button onclick="adicionarAoCarrinho('Mochila Infantil', 150)">Adicionar ao Carrinho</button>
+                    </div>
+                </section>
+
+            <!-- Produtos Similares -->
+        <section id="produtosSimilares">
+            <h2>Produtos Similares</h2>
+            <div class="produtos-similares">
+                <!-- Produto Similar 1 -->
+                <div class="produto-similar">
+                    <a href="detalhes-produto2.html">
+                        <img src="img/mochilafoguete.jpg" alt="Mochila Infantil Foguete" width="200" height="250">
+                        <p><strong>Mochila Foguete para Menino</strong></p>
+                        <p><strong>Preço: R$ 110,00</strong></p>
+                    </a>
+                </div>
+
+                <!-- Produto Similar 2 -->
+                <div class="produto-similar">
+                    <a href="detalhes-produto3.html">
+                        <img src="img/mochilamoderna.jpg" alt="Mochila Escolar Moderna" width="200" height="250">
+                        <p><strong>Mochila Escolar Moderna</strong></p>
+                        <p><strong>Preço: R$ 95,00</strong></p>
+                    </a>
+                </div>
+
+                <!-- Produto Similar 3 -->
+                <div class="produto-similar">
+                    <a href="detalhes-produto4.html">
+                        <img src="img/mochila3d.jpg" alt="Mochila Impacto 3D" width="200" height="250">
+                        <p><strong>Mochila Impacto 3D</strong></p>
+                        <p><strong>Preço: R$ 130,00</strong></p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Minha Loja Online</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+

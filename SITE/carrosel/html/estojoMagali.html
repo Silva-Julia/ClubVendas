@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja Online</title>
+    <link rel="stylesheet" href="css/out.css">
+</head>
+<body>
+
+    <!-- Cabeçalho com Barra de Pesquisa e Abas de Navegação -->
+    <header>
+        <img src="img/logo.jpg" alt="logo" src="imagem.jpg" width="70" height="70">
+        <nav id="navAbas">
+            <a href="index.html">Home</a>
+            <a href="#">Categorias</a>
+            <a href="#">Carrinho</a>
+            <a href="#">Perfil</a>
+        </nav>
+        <input type="text" placeholder="Buscar produtos..." id="barraPesquisa">
+        <button onclick="buscarProduto()">Buscar</button>
+    </header>
+
+    <!-- Menu de Categorias -->
+    <nav id="categorias">
+        <a href="#">Eletrônicos</a>
+        <a href="#">Escola</a>
+        <a href="#">Casa e Jardim</a>
+        <a href="#">Esportes</a>
+        <a href="#">Ferramentas</a>
+        <a href="#">Brinquedo</a>
+
+    </nav>
+
+    <!-- Lista de Produtos -->
+            <main>
+                <section id="detalhesProduto">
+                    <div class="produto">
+                        <img src="img/estojomagali.png" alt="Estojo da Magali" width="400" height="200">
+                        <h2>Estojo Personalizado Magali</h2>
+                        <p><strong>Preço: R$ R$ 50,00</strong></p>
+                        <h2><strong>Características</strong></h2>
+                        <ul>
+                            <li>Design divertido e colorido com estampa exclusiva da Magali, trazendo um visual alegre e vibrante que destaca o amor da personagem por frutas e cores.</li>
+                            <li>Compartimentos duplos: permite uma organização eficiente de lápis, canetas, borrachas e outros itens essenciais.</li>
+                            <li>Compacto e prático: fácil de transportar, cabe perfeitamente na mochila e ajuda a manter os materiais sempre à mão.</li>
+                            <li>Medidas: 23x10x6cm (LxAxP)
+                            </li>
+                        </ul>
+                        <button onclick="adicionarAoCarrinho('Estojo', 150)">Adicionar ao Carrinho</button>
+                    </div>
+                </section>
+                <!-- Produtos Similares -->
+                <section id="produtosSimilares">
+                    <h2>Produtos Similares</h2>
+                    <div class="produtos-similares">
+                    <!-- Produto Similar 1 -->
+                    <div class="produto-similar">
+                    <a href="detalhes-produto2.html">
+                           <img src="img/estojoescolar.png" alt="Estojo Escolar Infantil" width="200" height="200">
+                           <p><strong>Estojo Escolar Feminino Infantil Look 1 Zíper Flork</strong></p>
+                           <p><strong>Preço: R$ 21,99</strong></p>
+                       </a>
+                   </div>
+   
+                   <!-- Produto Similar 2 -->
+                   <div class="produto-similar">
+                       <a href="detalhes-produto3.html">
+                           <img src="img/estojoescolarBatwheels.png" alt="Estojo Escolar Infantil Masculino" width="200" height="200">
+                           <p><strong>Estojo Escolar Infantil Masculino Batwheels Azul</strong></p>
+                           <p><strong>Preço: R$ 37,90</strong></p>
+                       </a>
+                   </div>
+   
+                   <!-- Produto Similar 3 -->
+                   <div class="produto-similar">
+                       <a href="detalhes-produto4.html">
+                           <img src="img/estojolucasneto.png" alt="Estojo Escolar Duplo Luccas Neto" width="200" height="200">
+                           <p><strong>Estojo Escolar Duplo Luccas Neto Os Aventureiros</strong></p>
+                           <p><strong>Preço: R$ 29,99</strong></p>
+                       </a>
+                   </div>
+               </div>
+           </section>
+            </main>
+                <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Minha Loja Online</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+

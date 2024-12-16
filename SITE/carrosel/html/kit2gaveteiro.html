@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja Online</title>
+    <link rel="stylesheet" href="css/out.css">
+</head>
+<body>
+
+    <!-- Cabeçalho com Barra de Pesquisa e Abas de Navegação -->
+    <header>
+        <img src="img/logo.jpg" alt="logo" src="imagem.jpg" width="70" height="70">
+        <nav id="navAbas">
+            <a href="index.html">Home</a>
+            <a href="#">Categorias</a>
+            <a href="#">Carrinho</a>
+            <a href="#">Perfil</a>
+        </nav>
+        <input type="text" placeholder="Buscar produtos..." id="barraPesquisa">
+        <button onclick="buscarProduto()">Buscar</button>
+    </header>
+
+    <!-- Menu de Categorias -->
+    <nav id="categorias">
+        <a href="#">Eletrônicos</a>
+        <a href="#">Escola</a>
+        <a href="#">Casa e Jardim</a>
+        <a href="#">Esportes</a>
+        <a href="#">Ferramentas</a>
+        <a href="#">Brinquedo</a>
+
+    </nav>
+
+    <!-- Lista de Produtos -->
+            <main>
+                <section id="detalhesProduto">
+                    <div class="produto">
+                        <img src="img/kitgaveteiro.png" alt="Kit Gaveiros" width="400" height="400">
+                        <h2>Kit de 2 Organizador para Ferramentas</h2>
+                        <p><strong>Preço: R$ R$ 100,00</strong></p>
+                        <p>Descrição: Kit com 2 unidades de 16 gavetas cada, totalizando 32 gavetas.
+                            Os Organizadores 7000 têm como potencial em ser útil para organização e armazenamento, respeitando as informações de uso. Ideal para manter o ambiente organizado. 
+                            São produtos multiusos, práticos, versáteis e com ótimo acabamento.</p>
+                        <h2> Características: </h2> 
+                        <ul> 
+                            <li><strong>Material:</strong>  Plástico Polipropileno</li>
+                            <li><strong> Medidas:</strong>2,20 x 80 x 1,55cm</li>	
+                            <li><strong>Cor:</strong>Preta e Cinza </li>
+                        </ul>
+                        
+                        <button onclick="adicionarAoCarrinho('Mochila Infantil', 150)">Adicionar ao Carrinho</button>
+                    </div>
+                </section>
+
+            <!-- Produtos Similares -->
+        <section id="produtosSimilares">
+            <h2>Produtos Similares</h2>
+            <div class="produtos-similares">
+                <!-- Produto Similar 1 -->
+                <div class="produto-similar">
+                    <a href="detalhes-produto2.html">
+                        <img src="img/kit3cxsorganizadoras.png" alt="Kit com 3 Caixas Organizadoras" width="200" height="250">
+                        <p><strong>Kit com 3 Caixas Organizadoras</strong></p>
+                        <p><strong>Preço: R$ 109,00</strong></p>
+                    </a>
+                </div>
+
+                <!-- Produto Similar 2 -->
+                <div class="produto-similar">
+                    <a href="detalhes-produto3.html">
+                        <img src="img/gaveteirodechão.png" alt="Kit 2 Gaveteiro De Chão 3 Gavetas Organizador Escritório - Ordene
+                        " width="200" height="200">
+                        <p><strong>Kit 2 Gaveteiro De Chão 3 Gavetas Organizador Escritório - Ordene
+                        </strong></p>
+                        <p><strong>Preço: R$ 459,00</strong></p>
+                    </a>
+                </div>
+
+                <!-- Produto Similar 3 -->
+                <div class="produto-similar">
+                    <a href="detalhes-produto4.html">
+                        <img src="img/gaveteirochão.png" alt="Kit 3 Gavetas Guarda Roupa Modulado 1,20m - Evolution" width="200" height="200">
+                        <p><strong>Kit 3 Gavetas Guarda Roupa Modulado 1,20m - Evolution</strong></p>
+                        <p><strong>Preço: R$ 310,00</strong></p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Minha Loja Online</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+

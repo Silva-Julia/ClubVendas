@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja Online</title>
+    <link rel="stylesheet" href="css/out.css">
+</head>
+<body>
+
+    <!-- Cabeçalho com Barra de Pesquisa e Abas de Navegação -->
+    <header>
+        <img src="img/logo.jpg" alt="logo" src="imagem.jpg" width="70" height="70">
+        <nav id="navAbas">
+            <a href="index.html">Home</a>
+            <a href="#">Categorias</a>
+            <a href="#">Carrinho</a>
+            <a href="#">Perfil</a>
+        </nav>
+        <input type="text" placeholder="Buscar produtos..." id="barraPesquisa">
+        <button onclick="buscarProduto()">Buscar</button>
+    </header>
+
+    <!-- Menu de Categorias -->
+    <nav id="categorias">
+        <a href="#">Eletrônicos</a>
+        <a href="#">escola</a>
+        <a href="#">Casa e Jardim</a>
+        <a href="#">Esportes</a>
+        <a href="#">Ferramentas</a>
+        <a href="#">Brinquedo</a>
+    </nav>
+
+    <!-- Lista de Produtos -->
+    <main>
+        <section id="produtos">
+            <div class="produto">
+            <!-- Produto 3 -->
+            <img src="img/bingo.png" alt="BINGO" width="300" height="300">
+            <h2>Jogo De Mesa Bingo 48 Cartelas Kepler Diversão Em Família</h2>
+            <p><strong>Preço: R$ R$ 40,90</strong></p>
+            <p>Descrição: 
+                JOGO BINGO PARA CRIANÇAS - STYLL KIDS
+
+                CONTÉM:
+                
+                -01 (UM) JOGO DE TABULEIRO BINGO COMPLETO
+                -01 (UM) GLOBO
+                -01 (UMA) MANIVELA
+                -48 (QUARENTA E OITO) CARTELAS
+                -90 (NOVENTA) BOLINHAS
+                
+                
+                ** INSTRUÇÕES DE MONTAGEM NA EMBALAGEM **
+                ** CERTIFICADO PELO INMETRO **
+                
+                
+                *IDADE: +3*
+                
+                CARACTERÍSTICAS:
+                
+                
+                -Material: Plástico Polipropileno Resistente
+                -O globo conta com dispositivo de ejeção automática para as bolinhas.
+                
+                
+                Que melhor maneira de passar uma tarde chuvosa, do que com um jogo de mesa?
+                
+                
+                Incrível e Tradicional Jogo Do Bingo Na sua Mão!!!
+                
+                
+                48 Cartelas de pura diversão e competição, ótimo para jogar com sua família e amigos.
+                
+                
+                Com este passatempo divertido as risadas estão garantidas.
+                
+                
+                “BINGO!” um jogo conhecido em todo o mundo.
+                
+                
+                Ideal para reunir crianças, adultos, amigos e toda família.
+                A vibração do vencedor ao declarar “BINGO!” é impossível de ser evitada.
+                
+                
+                Se você está procurando um brinquedo para entreter toda a família ou seus
+                amigos, esse é o produto certo para você!
+            </p>
+            <ul>
+                <li>Ideal para adultos e crianças a partir de 6 anos.</li>
+                <li>Acomoda de 2 a 5 jogadores.</li>
+                
+            </ul>
+
+           
+            <button onclick="adicionarAoCarrinho('Bingo De Mesa', 40,90)">Adicionar ao Carrinho</button>
+        </div>
+    </section>
+
+     <!-- Produtos Similares -->
+     <section id="produtosSimilares">
+        <h2>Produtos Similares</h2>
+        <div class="produtos-similares">
+        <!-- Produto Similar 1 -->
+        <div class="produto-similar">
+        <a href="detalhes-produto2.html">
+               <img src="img/jogo.basta.png" alt="Jogo basta" width="200" height="200">
+               <p><strong>Jogo Basta!</strong></p>
+               <p><strong>Preço: R$69,90</strong></p>
+           </a>
+       </div>
+
+       <!-- Produto Similar 2 -->
+       <div class="produto-similar">
+           <a href="detalhes-produto3.html">
+               <img src="img/jogo5e1.png" alt="Jogo 5 em 1" width="200" height="200">
+               <p><strong>Jogo 5 em 1</strong></p>
+               <p><strong>Preço: R$ 99,99</strong></p>
+           </a>
+       </div>
+
+       <!-- Produto Similar 3 -->
+       <div class="produto-similar">
+           <a href="detalhes-produto4.html">
+               <img src="img/jogosequance.png" alt="Jogo de Sequence" width="200" height="250">
+               <p><strong>Jogo Sequence Copag</strong></p>
+               <p><strong>Preço: R$ 44,90</strong></p>
+           </a>
+       </div>
+</section>
+</main>
+
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Minha Loja Online</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

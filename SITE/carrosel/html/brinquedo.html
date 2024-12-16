@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brinquedos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+    
+    <!-- Cabeçalho com Barra de Pesquisa e Abas de Navegação -->
+    <header>
+        <img src="img/logo.jpg" alt="logo" src="imagem.jpg" width="70" height="70">
+        <nav id="navAbas">
+            <a href="index.html">Home</a>
+            <a href="#">Categorias</a>
+            <a href="carrinhodecompras.html">Carrinho</a>
+            <a href="login.html">Perfil</a>
+        </nav>
+        <input type="text" placeholder="Buscar produtos..." id="barraPesquisa">
+        <button onclick="buscarProduto()">Buscar</button>
+    </header>
+
+    <!-- Menu de Categorias -->
+    <nav id="categorias">
+        <a href="escolar.html">Escolar</a>
+        <a href="casa.html">Casa </a>
+        <a href="esportes.html">Esportes</a>
+        <a href="brinquedo.html">Brinquedo</a>
+
+    </nav>
+
+    
+    <!-- Lista de Produtos -->
+    <main>
+        <section id="produtos">
+            
+            <!-- Produto 2 -->
+            <div class="produto">
+                <a href="carrinhodecontrole.html">
+                <img src="img/controle.jpg" alt="Carrinho" src="imagem.jpg" width="150" height="200">
+                </a>
+                <h2>Carrinho De Controle Remoto Inteligente </h2>
+                <p>R$ 150,00</p>
+                <button onclick="adicionarAoCarrinho('Carrinho De Controle Remoto', 150)">Adicionar ao Carrinho</button>
+            </div>
+
+            <!-- Produto 3 -->
+            <div class="produto">
+                <a href="bingodemesa.html">
+                <img src="img/bingo.png" alt="Bingo" src="imagem.jpg" width="150" height="200">
+                </a>
+                <h2>Jogo De Mesa Bingo 48 Cartelas Kepler Diversão Em Família</h2>
+                <p>R$ 40,00</p>
+                <button onclick="adicionarAoCarrinho('Jogo De Mesa Bingo', 40)">Adicionar ao Carrinho</button>
+            </div>
+
+        
+            <!-- Produto 11 -->
+            <div class="produto">
+                <a href="blocosdemontar.html">
+                <img src="img/blocosdemontar.png" alt="Bloco de Montar" src="imagem.png" width="150" height="200">
+                </a>
+                <h2>Blocos de Montar </h2>
+                <p>R$ 150,00</p>
+                <button onclick="adicionarAoCarrinho('Bloco de Montar', 150)">Adicionar ao Carrinho</button>
+            </div>
+
+            
+            <!-- Produto 14 -->
+            <div class="produto">
+                <a href="bola.html">
+                <img src="img/boladefutebol.png" alt="Bola" src="imagem.jpg" width="150" height="200">
+                </a>
+                <h2>Bola de Futebol de Campo Corinthians Black</h2>
+                <p>R$ 70,00</p>
+                <button onclick="adicionarAoCarrinho('Bola de Futebol', 150)">Adicionar ao Carrinho</button>
+            </div>
+
+            
+            <!-- Produto 16 -->
+            <div class="produto"> 
+                <a href="lousaMagica.html">
+                <img src="img/lousamagica.png" alt="Lousa Magica" src="imagem.jpg" width="150" height="200">
+                </a>
+                <h2>Lousa Magica  </h2>
+                <p>R$ 150,00</p>
+                <button onclick="adicionarAoCarrinho('Lousa Magica', 150)">Adicionar ao Carrinho</button>
+            </div>
+            
+        </section>
+    </main>
+    
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Club Vendas</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+    <script>
+        let currentSlide = 1;
+    
+        function autoPlay() {
+            currentSlide = (currentSlide % 4) + 1;
+            document.getElementById(`carrossel-${currentSlide}`).checked = true;
+        }
+    
+        setInterval(autoPlay, 3000);  // Mudar a cada 3 segundos
+    </script>
+    
+</body>
+</html>
+
